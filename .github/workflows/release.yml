@@ -36,14 +36,12 @@ jobs:
 
             - name: Creating .npmrc
               run: |
-                  ls -l
                   touch index.js
                   cat << EOF > "index.js"
                     export default {}
                   EOF
                   mkdir dist
                   cp index.js dist 
-                  ls-l
                   cat << EOF > "$HOME/.npmrc"
                     //registry.npmjs.org/:_authToken=$NPM_TOKEN
                   EOF
