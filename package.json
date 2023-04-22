@@ -10,7 +10,7 @@
 	},
 	"publishConfig": {
 		"access": "public",
-		"directory": "/package"
+		"directory": "/dist"
 	},
 	"author": "",
 	"license": "ISC",
