@@ -1,16 +1,19 @@
 {
-  "name": "ci-test",
-  "version": "1.0.0",
-  "description": "The purpose is make an npm publish and a release on GH",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "@changesets/get-github-info": "^0.5.2",
-    "@changesets/types": "^5.2.1",
-    "dotenv": "^16.0.3"
-  }
+	"name": "ci-test",
+	"version": "1.0.0",
+	"description": "The purpose is make an npm publish and a release on GH",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"format": "prettier --write --plugin-search-dir=. .",
+		"release": "changeset publish"
+	},
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"@changesets/get-github-info": "^0.5.2",
+		"@changesets/types": "^5.2.1",
+		"dotenv": "^16.0.3",
+		"prettier": "^2.8.7"
+	}
 }
