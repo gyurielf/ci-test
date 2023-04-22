@@ -1,5 +1,13 @@
 # ci-test
 
+## 2.0.3
+
+### Patch Changes
+
+-   t8 ([#12](https://github.com/gyurielf/ci-test/pull/12))
+
+-   kaka ([#11](https://github.com/gyurielf/ci-test/pull/11))
+
 ## 2.0.2
 
 ### Patch Changes
