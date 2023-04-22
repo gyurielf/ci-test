@@ -36,11 +36,12 @@ jobs:
 
             - name: Creating .npmrc
               run: |
+                  ls -l
                   cat << EOF > "$HOME/.npmrc"
                     //registry.npmjs.org/:_authToken=$NPM_TOKEN
                   EOF
                   cp $HOME/.npmrc package
-                  cp $HOME/package.json package
+                  cp package.json package                  
                   ls -l
               env:
                   NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
@@ -50,7 +51,6 @@ jobs:
               uses: changesets/action@v1
               with:
                   # This expects you to have a script called release which does a build for your packages and calls changeset publish
-                  run: ls -l
                   publish: npm run release
               env:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
