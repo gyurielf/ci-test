@@ -1,5 +1,13 @@
 # @gyurielf/ci-test
 
+## 2.0.6
+
+### Patch Changes
+
+-   kecske ([#18](https://github.com/gyurielf/ci-test/pull/18))
+
+-   kasdk ([#20](https://github.com/gyurielf/ci-test/pull/20))
+
 ## 2.0.5
 
 ### Patch Changes
