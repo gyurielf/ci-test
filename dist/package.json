@@ -1,6 +1,6 @@
 {
 	"name": "@gyurielf/ci-test",
-	"version": "2.0.5",
+	"version": "2.0.4",
 	"description": "The purpose is make an npm publish and a release on GH",
 	"main": "index.js",
 	"scripts": {
