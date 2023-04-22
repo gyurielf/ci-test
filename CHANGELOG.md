@@ -1,5 +1,11 @@
 # ci-test
 
+## 2.0.2
+
+### Patch Changes
+
+-   asd ([#9](https://github.com/gyurielf/ci-test/pull/9))
+
 ## 2.0.1
 
 ### Patch Changes
