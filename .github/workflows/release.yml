@@ -40,6 +40,7 @@ jobs:
                     //registry.npmjs.org/:_authToken=$NPM_TOKEN
                   EOF
                   cp $HOME/.npmrc package
+                  cp $HOME/package.json package
                   ls -l
               env:
                   NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
