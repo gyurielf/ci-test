@@ -34,19 +34,23 @@ jobs:
             #   run: |
             #       npm run package
 
-            - name: Creating .npmrc
+            - name: Create Dist
               run: |
+                  mkdir dist
+                  cp package.json dist
                   touch index.js
                   cat << EOF > "index.js"
-                    export default {}
-                  EOF
-                  mkdir dist
-                  cp index.js dist 
+                    export default { console.log('hey') }
+                  EOF                 
+                  mv index.js dist
+                  ls -l
+
+            - name: Creating .npmrc
+              run: |
                   cat << EOF > "$HOME/.npmrc"
                     //registry.npmjs.org/:_authToken=$NPM_TOKEN
                   EOF
-                  cp $HOME/.npmrc dist
-                  cp package.json dist                  
+                  cp $HOME/.npmrc dist                                   
                   ls -l
               env:
                   NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
