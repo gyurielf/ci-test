@@ -6,7 +6,7 @@
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"format": "prettier --write --plugin-search-dir=. .",
-		"release": "changeset publish"
+		"release": "cd package && changeset publish"
 	},
 	"author": "",
 	"license": "ISC",
